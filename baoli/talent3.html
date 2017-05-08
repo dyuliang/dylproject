@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head"></div>
+		<!--导航栏 END-->
+		<!--子页banner-->
+		<div class="subBan talent3ban">
+			<h1>培训发展</h1>
+			<p>卓越职业生涯从保利商业启程</p>
+		</div>
+		<!--子页bannerEND-->
+		<!--面包屑导航-->
+		<div class="crumbs">
+			<a href="index.html">首页 </a>  > <a href="javascript:;">保利商业 </a> > <a href="javascript:;"> 业务概览</a>
+		</div>
+		<!--面包屑导航END-->
+		<div class="talent3">
+			<h3>保利商学院</h3>
+			<div class="w1200">
+				<p>			
+	为促进公司业务快速发展，服务于公司战略， 2016年5月成立保利商学院，学院拥有支撑内部运营的奔驰模式和成型的学习训练体系。
+	保利商学院将员工个人成长与公司的长远发展相互促进、紧密融合，<br>以解决业务问题为导向，以员工学习发展为主线、以外部管理咨询输出为辅的商学院。	
+	学院围绕企业文化传承和发展、人才培养体系、管理领导力系列、专业业务能力提升四方面进行着手。
+						
+				</p>
+			</div>
+			
+			<ul>
+				<li>
+					<img src="img/talent/talent3-list-img.jpg"  alt=""/>
+				</li>
+				<li>
+					<img src="img/talent/talent3-list-img.jpg"  alt=""/>
+				</li>
+				<li>
+					<img src="img/talent/talent3-list-img.jpg"  alt=""/>
+				</li>
+				<li>
+					<img src="img/talent/talent3-list-img.jpg"  alt=""/>
+				</li>
+			</ul>
+			
+			<div class="talent3-btm">
+				<div class="w1200 clearfix tl3-nav">
+					<ul>
+						<li class="on">
+							<i class="tl3-icon1"></i>
+							<h4>企业文化传承和发展</h4>
+						</li>
+						<li>
+							<i class="tl3-icon2"></i>
+							<h4>人才培养体系</h4>
+						</li>
+						<li>
+							<i class="tl3-icon3"></i>
+							<h4>管理领导力系列</h4>
+						</li>
+						<li>
+							<i class="tl3-icon4"></i>
+							<h4>专业业务技能管理提升</h4>
+						</li>
+					</ul>
+				</div>
+				<div class="tl3-text w1200">
+					<ul>
+						<li>
+							<h4>企业文化传承和发展</h4>
+							<p>企业文化从内部文化的宣导、商业风云月刊，商学院的“创客”空间、员工生日“Surprise”，品牌落地“庆功会”，“专业创造价值”系列进行展开。   </p>
+						</li>
+						<li>
+							<h4>人才培养体系</h4>
+							<p>企业文化从内部文化的宣导、商业风云月刊，商学院的“创客”空间、员工生日“Surprise”，品牌落地“庆功会”，“专业创造价值”系列进行展开。  人才培养体系是公司管理人才成长的快车道，从校园招聘的“保利合伙人”旅途开启， 到中层管理者培养 “优才计划”，到高层管理者培养 “商才计划”，以及新晋升、新入职的高层提升系列，为公司快速发展提供高质量的人才。 </p>
+						</li>
+						<li>
+							<h4>管理领导力系列</h4>
+							<p>保利商学院拥有在职管理人员能力的训练体系，目的是让现有的管理人员从不胜任到胜任，从胜任到卓越，目前拥有中、高层管理课程10个，基层管理课程8个。</p>
+						</li>
+						<li>
+							<h4>专业业务技能管理提升</h4>
+							<p>
+								培训贴近业务，学习卓越，加速分公司的成长，进行企业和个人经验的沉淀和复制，营造分享文化氛围，从业务精英到各层级管理人员，能把自己是优秀实践经验进行分享，既解决业务中出现的问题，又有效的进行内部的知识管理。	
+未来，商学院以内外客户为核心目标，以配合公司发展战略指导原则，继续开拓具有保利特色的发展学习模式，打造创新化经营与服务，为推动保利商业地产持续发展不懈努力。
+
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.js" ></script>
+		<script src="js/masonry-docs.min.js"></script>
+		<script>
+			jQuery(".talent3-btm").slide({titCell:".tl3-nav li",mainCell:".tl3-text ul",effect:"fade",autoPlay:false,trigger:'click',startFun:function(i,c){
+				$('.talent3>ul>li').eq(i).fadeIn().siblings().hide();
+			}});
+		</script>
+	</body>
+</html>

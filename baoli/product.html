@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head"></div>
+		<!--导航栏 END-->
+		<div class="subBan productban">
+			<h1>核心产品</h1>
+			<p>我们打造地标典范、构建商业生态圈、以品质引领生活</p>
+		</div>
+		<div class="product1">
+			<h2>物业发展</h2>
+			<div class="pdt-srh">
+				<input type="text" value="请输入搜索项目名称..." onfocus="if(this.value == '请输入搜索项目名称...') this.value = ''" onblur="if(this.value =='') this.value = '请输入搜索项目名称...'"/>
+				<a href="javascript:;" class="srh-a"></a>
+			</div>			
+			
+			<div class="w1200 clearfix">
+				<div class="product-box">
+					<a href="product2.html">
+						<img src="img/product/product1-img1.jpg" alt="现有发展项目"/>
+						<div class="pb-text">
+							<h3>现有发展项目</h3>
+							<p>创造城市新生活方式</p>
+							<span class="sear-more"></span>
+						</div>
+					</a>
+				</div>
+				<div class="product-box last">
+					<a href="product2.html">
+						<img src="img/product/product1-img2.jpg" alt="未来发展项目"/>
+						<div class="pb-text">
+							<h3>未来发展项目</h3>
+							<p>重塑社区生活方式</p>
+							<span class="sear-more"></span>
+						</div>
+					</a>					
+				</div>
+			</div>
+			
+			
+			<div class="product-btm">
+				<h2>品牌系列</h2>
+				<div class="product-case pr">
+					<ul class="w1200">
+						<li>
+							<a href="product3.html?layer=1"><img src="img/product/pd-logo1.png" alt="保利MALL" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=6"><img src="img/product/pd-logo2.png" alt="保利广场" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=2"><img src="img/product/pd-logo3.png" alt="时光里" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=5"><img src="img/product/pd-logo4.png" alt="NRTEL 雅途" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=3"><img src="img/product/pd-logo5.png" alt="NPLUS 酒店" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=7"><img src="img/product/pd-logo6.png" alt="NPLUS 公寓" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=4"><img src="img/product/pd-logo7.png" alt="瑜璟阁" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=8"><img src="img/product/pd-logo8.png" alt="若比邻" /></a>
+						</li>
+						<li>
+							<a href="product3.html?layer=9"><img src="img/product/pd-logo9.png" alt="YOOYA" /></a>
+						</li>
+						
+					</ul>
+					<a href="javascript:;" class="btn prev"></a>
+					<a href="javascript:;" class="btn next"></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.js"></script>
+		<script>
+			$('.product-btm').slide({mainCell:".product-case ul",autoPage:true,effect:"left",autoPlay:true,vis:8});
+		</script>
+	</body>
+</html>

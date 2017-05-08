@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head">
+			
+		</div>
+		<!--导航栏 END-->
+		<!--子页banner-->
+		<div class="subBan2"></div>
+		<!--子页bannerEND-->
+			<!--面包屑导航-->
+		<div class="crumbs">
+			<a href="index.html">首页 </a>  > <a href="javascript:;">保利商业 </a> > <a href="javascript:;"> 业务概览</a>
+		</div>
+		<!--面包屑导航END-->
+		<!--业务概览-->
+		<div class="about-detail">
+			<div class="ad-con">
+				<img src="img/about/abslid2-img.jpg" alt=""/>
+			</div>
+		
+		</div>
+		
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/masonry-docs.min.js" ></script>
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
+		
+		<script>
+			
+			$(function(){
+				$('.about1-box').click(function(){
+					var ind = $(this).index();
+					$('.about1').addClass('ab1open' + ind);
+				})
+				$('.ab-close').click(function(){
+					$('.about1').removeClass('ab1open0 ab1open1 ab1open2 ab1open3');
+				})
+				
+				$(".slide-main .w1200").mCustomScrollbar({
+					theme:"minimal-dark"
+				});
+
+			})
+		</script>
+	</body>
+</html>

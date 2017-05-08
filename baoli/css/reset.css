@@ -1,0 +1,62 @@
+/*
+* @Title:  共用初始化样式
+* @Author: 袁威
+* @Date:   2016-9-30 ‏‎11:23:33
+* @Last Modified time: 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, 
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td,i {margin: 0;padding: 0; border: 0; outline: 0; font-weight: inherit;font-style: inherit; font-size: 13px; font-family: "microsoft yahei","simhei",sans-serif; vertical-align: baseline; color:#5a5f63;} 
+:focus { outline: 0;}
+table {border-collapse: separate; border-spacing: 0;} 
+caption, th, td {text-align: left;font-weight: normal;}
+a{ text-decoration:none;transition: all 400ms; -webkit-transition: all 400ms;} 
+a img, iframe {border: none;}
+a:focus{outline:none;}
+img{ vertical-align:top;} 
+ol, ul {list-style: none;} 
+input, textarea, select, button { font-size: 100%; font-family: inherit; } 
+select { margin: inherit;} 
+sub, sup { font-size: 75%; line-height: 0; position: relative;  vertical-align: baseline;}
+sub {  bottom: -0.25em; } 
+sup {  top: -0.5em; }
+/* Fixes incorrect placement of numbers in ol’s in IE6/7 */ 
+ol { *margin-left:2em; }
+
+
+body{width:100%;min-width: 1200px;margin:0 auto;overflow-x: hidden;}
+ /* ===== clearfix ===== */ 
+.clearfix:after { content:"\200B"; display:block; height:0; clear:both; }
+.clearfix {*zoom:1;}/*IE/7/6*/ 
+/* ===== 以上 reset Css ===== */ 
+
+/* ===== 共用 ===== */
+.fl{ float:left;}
+.fr{ float:right;}
+
+.pr{position: relative;}
+.w1200{ width: 1200px; margin:0 auto;}
+.w950{width:950px;float:left;}
+
+/*设置滚动条样式*/
+::-webkit-scrollbar{
+	width: 8px;
+    height: 8px;
+    background-color:rgba(168, 171, 181, 0.4);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb{
+	background-color:rgba(124, 127, 139, 0.7);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+@font-face{font-family: 'nexalight-webfont';src: url('../fonts/nexalight-webfont.eot');src: url('../fonts/nexalight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexalight-webfont.woff2') format('woff2'), url('../fonts/nexalight-webfont.woff') format('woff'), url('../fonts/nexalight-webfont.ttf') format('truetype'), url('../fonts/nexalight-webfont.svg#novecentowide-bold-webfont') format('svg');}
+@font-face{font-family: 'dincond-medium-webfont';src: url('../fonts/dincond-medium-webfont.eot');src: url('../fonts/dincond-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/dincond-medium-webfont.woff2') format('woff2'), url('../fonts/dincond-medium-webfont.woff') format('woff'), url('../fonts/dincond-medium-webfont.ttf') format('truetype'), url('../fonts/dincond-medium-webfont.svg#novecentowide-bold-webfont') format('svg');}
+@font-face{font-family:"TeXGyreAdventor-Regular";src:url("../fonts/texgyreadventor-regular.eot?") format("eot"),url("../fonts/texgyreadventor-regular.woff") format("woff"),url("../fonts/texgyreadventor-regular.ttf") format("truetype"),url("../fonts/texgyreadventor-regular.svg#TeXGyreAdventor-Regular") format("svg");font-weight:normal;font-style:normal;}
+@font-face {font-family: 'novecento-widenormal';src: url('../fonts/novecentowide-normal.eot');src: url('../fonts/novecentowide-normal.eot?#iefix') format('embedded-opentype'),url('../fonts/novecentowide-normal.woff2') format('woff2'),url('../fonts/novecentowide-normal.woff') format('woff'),url('../fonts/novecentowide-normal.ttf') format('truetype'),url('../fonts/novecentowide-normal.svg#novecento_widenormal') format('svg');font-weight: normal;font-style: normal;}

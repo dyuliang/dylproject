@@ -1,0 +1,172 @@
+<div class="bg2">
+					<a href="index.html" class="logo">
+						<img src="img/logo.jpg"  alt="保利商业"/>
+					</a>
+					<div class="search-lang">
+						<a href="javascript:;" class="menu">EN</a>
+						<!--<a href="javascript:;" class="language">EN</a>-->
+					</div>
+					<div class="nav">
+						<ul>
+							<li>
+								<a href="index.html">首页</a>
+							    <div class="nav-bg"></div>			   
+							</li>
+							<li>
+								<a href="about.html">保利商业</a>
+							    <div class="nav-bg"></div>			   
+							</li>
+							<li>
+								<a href="product.html">核心产品</a>
+								<div class="nav-bg"></div>
+							</li>
+							<li>
+								<a href="news1-1.html">资讯中心</a>
+								<div class="nav-bg"></div>
+							</li>
+							<li>
+								<a href="project.html">项目合作</a>
+								<div class="nav-bg"></div>
+							</li>
+							<li>  
+								<a href="talent.html">人才发展</a>
+								<div class="nav-bg"></div>
+							</li>
+							<li>
+								<a href="duty.html">企业责任</a>
+								<div class="nav-bg"></div>
+							</li>
+							<li>
+								<a href="contact.html">联络我们</a>
+								<div class="nav-bg"></div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			<div class="subNav-line">
+				
+				<ul>
+					<li><a href="about2.html">业务概览</a><img src="img/subnav/subnav_01.jpg"></li>
+					<li><a href="about3-detail.html">品牌精神</a><img src="img/subnav/subnav_02.jpg"></li>
+					<li><a href="about4.html">发展历程</a><img src="img/subnav/subnav_03.jpg"></li>
+					<li class="last"><a href="about5.html">奖项成就</a><img src="img/subnav/subnav_04.jpg"></li>		
+				</ul>
+				<ul>
+					<li><a href="product2.html">物业发展</a> <img src="img/subnav/subnav_01.jpg"></li>
+					<li class="last"><a href="product3.html">品牌系列</a> <img src="img/subnav/subnav_02.jpg"></li>	
+				</ul>
+				<ul>
+					<li><a href="news.html">最新活动</a> <img src="img/subnav/subnav_01.jpg"></li>
+					<li><a href="news1-1.html">公司新闻</a> <img src="img/subnav/subnav_02.jpg"></li>
+					<li><a href="news1-2.html">媒体报道</a> <img src="img/subnav/subnav_03.jpg"></li>
+					<li><a href="news2.html">视频</a> <img src="img/subnav/subnav_04.jpg"></li>
+					<li class="last"><a href="news3.html">画册</a> <img src="img/subnav/subnav_05.jpg"></li>						
+				</ul>
+				<ul>
+					<li><a href="project2.html">购物中心</a> <img src="img/subnav/subnav_01.jpg"></li>
+					<li><a href="project4.html">酒店</a> <img src="img/subnav/subnav_02.jpg"></li>		
+					<li><a href="project3.html">社区商业中心</a> <img src="img/subnav/subnav_03.jpg"></li>	
+					<li class="last"><a href="project5.html">公寓</a> <img src="img/subnav/subnav_03.jpg"></li>	
+				</ul>
+				<ul>
+					<li><a href="talent2.html">企业文化</a> <img src="img/subnav/subnav_04.jpg"></li>
+					<li><a href="talent3.html">培训发展</a> <img src="img/subnav/subnav_05.jpg"></li>
+					<li><a href="talent4.html">招贤纳士</a><img src="img/subnav/subnav_06.jpg"></li>
+				</ul>
+				<ul>
+					<li class="last"><a href="duty2.html">青少年教育</a> <img src="img/subnav/subnav_01.jpg"></li>
+					<li class="last"><a href="duty3.html">环境保护</a> <img src="img/subnav/subnav_02.jpg"></li>
+					<li class="last"><a href="duty4.html">社区关怀</a> <img src="img/subnav/subnav_03.jpg"></li>
+				</ul>
+				<ul>
+					<li><a href="contact.html">公司总部</a> <img src="img/subnav/subnav_04.jpg"></li>
+					<li><a href="contact.html#scroll">项目分布</a> <img src="img/subnav/subnav_05.jpg"></li>
+					<li class="last"><a href="contact.html#scroll">市场传讯</a> <img src="img/subnav/subnav_06.jpg"></li>
+				</ul>
+				
+			</div>
+
+<script>
+	$(function(){
+			  
+		url = window.location.href;
+		function chu(){ //初始导航出现	
+			$('.subNav-line li a').each(function(){
+				var liOn = $(this).attr('href');		
+				if(url.indexOf(liOn) > 0){		
+					var liNum = $(this).parents('ul').index();
+					$('.nav li').eq(liNum).addClass('curr').siblings().removeClass('curr');
+					$('.subNav-line').show();
+					$('.subNav-line ul').eq(liNum).fadeIn();					
+				}
+			})
+			
+			$(window).scroll(function(){
+				if($('body').scrollTop() > 117){
+					$('.subNav-line').css({'position':'fixed','top':'0'});
+				}else{
+					$('.subNav-line').css({'position':'absolute','top':'117px'});
+				}
+			})	
+		}
+		
+		
+		subNavShow();//二级导航展示
+		contactSroll();//联系我们滚动
+		function subNavShow(){
+			//二级导航
+			$('.head').mouseleave(function(){
+				$('.subNav-line ul').css('top','-127px');		
+			});
+			$('.head-top').hover(function(){
+				$('.subNav-line ul').css('top','-127px');				
+			},function(){		
+			});		
+			//二级导航 展示
+			$('.nav li').mouseenter(function(){ 
+				var li_sub =  $(this).prevAll().length;		
+				if(li_sub > 0){
+					$('.subNav-line ul').eq(li_sub - 1).siblings().css('top','-127px');
+					$('.subNav-line ul').eq(li_sub - 1).css('top','0px');	
+				}else{
+					$('.subNav-line ul').css('top','-127px');
+				}
+			})
+			$('.head').mouseover(function(){
+				$('.nav li').each(function(){
+					var li_sub2 =  $(this).index();
+					var li_len = $('.nav li').length;
+					var li_left = $(this).position().left;
+					if(li_sub2 > 0){
+						$('.subNav-line ul').eq(li_sub2 - 1).css('left',li_left +'px');
+					}
+					if(li_sub2 == li_len - 2){
+						$('.subNav-line ul').eq(li_sub2 - 1).css('left',-90 + li_left +'px');
+					}
+					if(li_sub2 == li_len - 1){
+						$('.subNav-line ul').eq(li_sub2 - 1).css('left',-180 + li_left +'px');
+					}
+				})
+			})
+			
+
+		}
+		
+		function contactSroll(){
+			var url2 = window.location.hash;
+			if(url.indexOf(url2)){
+				$('body').animate({'scrollTop':'1120px'},800);
+			}
+			var subUlLen = $('.subNav-line ul').length;
+			$('.subNav-line ul').eq(subUlLen - 1).children('li').eq(1).click(function(){
+				$('body').animate({'scrollTop':'1120px'},800);
+			})
+			$('.subNav-line ul').eq(subUlLen - 1).children('li').eq(0).click(function(){
+				$('body').animate({'scrollTop':0},800);
+			})
+		}
+		
+		 
+	})
+</script>

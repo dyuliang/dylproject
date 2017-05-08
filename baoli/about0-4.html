@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head">
+			
+		</div>
+		<!--导航栏 END-->
+		<!--子页banner-->
+		<div class="subBan2"></div>
+		<!--子页bannerEND-->
+			<!--面包屑导航-->
+		<div class="crumbs">
+			<a href="index.html">首页 </a>  > <a href="javascript:;">保利商业 </a> > <a href="javascript:;"> 业务概览</a>
+		</div>
+		<!--面包屑导航END-->
+		<!--业务概览-->
+		<div class="about-detail">
+			<div class="ad-con">
+				<div class="w1200">
+					<h2>若比邻社区商业中心</h2>
+					<h4>重塑社区生活方式</h4>
+					<p>
+						若比邻：“若比邻社区商业中心”以自营的“比邻超市”以及延续社区邻里温情的“邻空间”为双核心驱动，同时搭配面包、咖啡、美容、美发、药店、洗衣、健身、餐饮等生活服务业态的一站式<br>
+社区商业体验空间。 通过“若比邻app”及“云平台大数据系统”的互联网工具全面提升社区服务，包括会员积分、社群交流、信息查询、物流配送、支付结算等。以“重塑社区生活方式”的品牌<br>
+理念，为广大社区居民提供O2O全渠道模式的社区生活解决方案。
+					</p>
+				
+					<p style="padding-top:20px;">
+						<img src="img/about/abslid3-img1.jpg" alt=""/>
+						<img src="img/about/abslid3-img2.jpg" alt=""/>
+						<img src="img/about/abslid3-img3.jpg" alt=""/>
+					</p>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/masonry-docs.min.js" ></script>
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
+		
+		<script>
+			
+			$(function(){
+				$('.about1-box').click(function(){
+					var ind = $(this).index();
+					$('.about1').addClass('ab1open' + ind);
+				})
+				$('.ab-close').click(function(){
+					$('.about1').removeClass('ab1open0 ab1open1 ab1open2 ab1open3');
+				})
+				
+				$(".slide-main .w1200").mCustomScrollbar({
+					theme:"minimal-dark"
+				});
+
+			})
+		</script>
+	</body>
+</html>

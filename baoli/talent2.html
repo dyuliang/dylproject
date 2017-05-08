@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head"></div>
+		<!--导航栏 END-->
+		<!--子页banner-->
+		<div class="subBan talent2ban">
+			<h1>企业文化</h1>
+		</div>
+		<!--子页bannerEND-->
+		<!--面包屑导航-->
+		<div class="crumbs">
+			<a href="index.html">首页 </a>  > <a href="javascript:;">保利商业 </a> > <a href="javascript:;"> 业务概览</a>
+		</div>
+		<!--面包屑导航END-->
+		<div class="talent2">
+			<div class="w1200 clearfix">
+				<div class="talent2-box">
+					<a href="javascript:;">
+						<img src="img/talent/talent2-img1.jpg" alt="" />
+						<div class="talent2-title">
+							<h3>怀揣梦想</h3>
+							<p>
+								为梦想而来；<br>
+								梦想的实现伴随着汗水和泪水；<br>
+								实现人生价值，为公司和自己创造财富。
+							</p>
+						</div>
+					</a>					
+				</div>
+				<div class="talent2-box">
+					<a href="javascript:;">
+						<img src="img/talent/talent2-img2.jpg" alt="" />
+						<div class="talent2-title">
+							<h3>因为在意，加倍努力</h3>
+							<p>
+								在意我们的客人、合作伙伴、同事，尊重、服务、关心他们；<br>
+								同事间和谐团结、友善关爱；<br>
+								做事不推诿，没有“不是我的事”；<br>
+								任何问题至少有3个不同的解决办法；<br>
+								诚信履职，禁止收受或索取任何贿赂及惠赠。
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="talent2-box last">
+					<a href="javascript:;">
+						<img src="img/talent/talent2-img3.jpg" alt="" />
+						<div class="talent2-title">
+							<h3>用专业创造更多价值</h3>
+							<p>
+								以行业标杆衡量我们的标准，努力缩小差距并超越；<br>
+								热爱学习，不进则退；<br>
+								经常自省，持续改良流程和方法；<br>
+								用专业做到没有“不知道”、没有“我不懂”；<br>
+								创新，仅仅是开始；创新，一切皆有可能。
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="talent2-btm">
+				
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
+		<script src="js/masonry-docs.min.js"></script>
+		<script>
+			$('.talent2-box').hover(function(){
+				var pHei = $(this).find('p').height();
+				$(this).find('.talent2-title').css({'height':26 + pHei +'px'})
+			},function(){
+				$(this).find('.talent2-title').css({'height':'26px'})
+			})
+		</script>
+	</body>
+</html>

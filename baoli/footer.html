@@ -1,0 +1,142 @@
+<div class="ftmap ftlayer">
+	<div class="w1200">
+		<h2>网站地图</h2>
+		<ul>
+			<li>
+				<h3>保利商业</h3>
+				<a href="javascript:;">业务概览</a>
+				<a href="javascript:;">品牌精神</a>
+				<a href="javascript:;">发展历程</a>
+				<a href="javascript:;">奖项成就</a>
+			</li>
+			<li>
+				<h3>核心产品	</h3>
+				<a href="javascript:;">物业发展</a>
+				<a href="javascript:;">品牌系列</a>
+			</li>
+			<li>
+				<h3>资讯中心</h3>
+				<a href="javascript:;">最新活动</a>
+				<a href="javascript:;">公司新闻</a>
+				<a href="javascript:;">媒体报道</a>
+				<a href="javascript:;">视频</a>
+				<a href="javascript:;">画册</a>
+			</li>
+			<li>
+				<h3>项目合作</h3>
+				<a href="javascript:;">购物中心</a>
+				<a href="javascript:;">酒店</a>
+				<a href="javascript:;">公寓</a>
+				<a href="javascript:;">社区商业</a>
+			</li>
+			<li>
+				<h3>人才发展</h3>
+				<a href="javascript:;">企业文化</a>
+				<a href="javascript:;">培训发展</a>
+				<a href="javascript:;">招贤纳士</a>
+			</li>
+			<li>
+				<h3>企业责任</h3>
+				<a href="javascript:;">青少年教育</a>
+				<a href="javascript:;">环境保护</a>
+				<a href="javascript:;">社区关怀</a>
+			</li>
+			<li>
+				<h3>联络我们</h3>
+				<a href="javascript:;">公司总部</a>
+				<a href="javascript:;">项目分布</a>
+				<a href="javascript:;">市场传讯</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="ftlegal ftlayer">
+	<div class="w1200">
+		<h3>
+			版权声明
+		</h3>
+		<p>
+			本网站(www.poly-cre.com/)上为版权人所有的文件，在此并未作任何授权。本网站上的文件仅限于为信息和非商业或个人之目的使用，并且不得在任何网络计算机上复制或公布，也不得在任何媒体上传播。未经版权人许可， 任何人不得擅自(包括但不限于：以非法的方式复制、传播、展示、镜像、上载、下载)使用。否则版权人将依法追究其法律责任。
+		</p>
+		<h3>
+			免责声明
+		</h3>
+		<p>
+			版权人拥有对本网站的内容进行随时更改之权利，事前将不会另行通知。版权人不保证或声明本网站展示的资料是否正确、全面或是最新数据。 本网站内的所有图片(包括但不限于插图、透视图、设计图等)、模型、文字描述等，仅作为参考信息，非开发商的任何承诺或要约。
+		</p>
+		<h3>
+			开发商声明
+		</h3>
+		<p>
+			网站有关其开发项目信息的介绍，均以政府最后审批文件为准。商品房买卖双方之间的关系以当事人签订的买卖双方之间的关系以当事人签订买卖合同为准。 任何人因本网站或依赖其内容进行交易所引致的损失，版权人和开发商均不承担任何责任。
+		</p>
+	</div>
+</div>
+<div class="ftpanner ftlayer">
+	<div class="w1200">
+		<a href="javascript:;">中国保利集团</a>
+		<a href="javascript:;">保利地产</a>
+		<a href="javascript:;">保利酒店</a>
+	</div>
+	
+</div>
+
+<div class="w1200 pr">
+	<!--<a href="javascript:;" class="partner-btn"></a>-->
+	<p>
+		保利商业地产投资管理有限公司   版权所有    ICP备05003852号<br>
+		<a href="javascript:;" class="legalBtn"> 法律声明 </a>· <a href="javascript:;" class="partnerBtn">友情链接 </a> · <a href="javascript:;" class="mapBtn"> 网站地图 </a> 
+	</p>
+	<a href="javascript:;" class="ft-icon wx-icon"><img src="img/contact/wx2.jpg" alt=""/></a>
+	<a href="javascript:;" class="ft-icon sina-icon"></a>
+	<a href="javascript:;" target="_blank" class="fr reenoo"><img src="img/index/reenoo.png" alt="锐诺互动"/></a>
+
+</div>
+
+	<!--返回顶部-->
+<div class="scroll-top"></div>
+<script type="text/javascript" src="js/jquery.scrollto.js" ></script>
+<script>
+$(function(){
+	$('.legalBtn').click(function(){
+		$('.ftlegal').slideToggle().siblings('.ftlayer').hide();
+		$("html,body").stop().animate({ scrollTop:$('.footer').offset().top -90 + "px"},400);
+		getEvent();
+		cancelBubble();
+	})
+	$('.mapBtn').click(function(){
+		$('.ftmap').slideToggle().siblings('.ftlayer').hide();
+		$("html,body").stop().animate({ scrollTop:$('.footer').offset().top -90 + "px"},400);
+		getEvent();
+		cancelBubble();
+	})
+	$('.partnerBtn').click(function(){
+		$('.ftpanner').slideToggle().siblings('.ftlayer').hide();
+		$("html,body").stop().animate({ scrollTop:$('.footer').offset().top -90 + "px"},400);
+		 getEvent();
+			        cancelBubble();
+	})
+	 $('body').click(function () {
+    	$('.ftlayer').slideUp();
+    })
+
+  	//返回顶部
+  	scrollTop();
+  	function scrollTop(){	
+	  	var wint = $(window).scrollTop();
+		$(window).on('scroll',function(){
+			wint = $(window).scrollTop();
+			
+			if(wint > 300 ){
+				$('.scroll-top').fadeIn();	
+			}else{
+				$('.scroll-top').fadeOut();
+			};		
+		});	
+		$('.scroll-top').click(function(){
+			$('body,html').animate({ scrollTop: 0 }, 400);
+		});
+	}
+})
+	
+</script>

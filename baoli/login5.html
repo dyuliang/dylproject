@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/city-picker.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head">
+			
+		</div>
+		<!--导航栏 END-->
+		<!--个人 中心-->
+		<div class="personal">
+			<div class="w1200 clearfix">
+				<div class="psl-left">
+					<h2>个人中心</h2>
+					<ul>
+						<li><a href="login4.html">我的申请</a></li>
+						<li><a href="login3.html">我的简历</a></li>
+						<li><a href="login8.html">已收藏职位</a></li>
+						<li class="on"><a href="login5.html">账户设置</a></li>
+					</ul>
+				</div>
+				<div class="psl-right">
+					<h2>账户设置</h2>
+					<div class="psl-box clearfix">
+						<div class="text">
+							<span class="user-name-label">用户名：</span>
+							<span class="userName">name</span>
+							<input type="text" class="user-name" value="name">
+							<span class="modify-user-password btn">
+								修改密码
+							</span>	
+							<span class="modify-user-name btn">
+								修改用户名
+							</span>	
+							
+							<span class="modify-user-password2 btn">
+								取消
+							</span>	
+							<span class="modify-user-name2 btn">
+								确定
+							</span>	
+						</div>
+						
+						<!--密码-->
+						<div class="psl-info lg5pass">
+							<form action="" method="post">
+								<ul>
+									<li>
+										<label>旧密码：</label>
+										<input type="password"/>
+									</li>
+									<li>
+										<label>新密码：</label>
+										<input type="password"/>
+									</li>
+									<li>
+										<label>确认密码：</label>
+										<input type="password"/>
+									</li>
+								</ul>							
+							</form>						
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>			
+		<script type="text/javascript" src="js/masonry-docs.min.js" ></script>	
+		<script type="text/javascript">
+			$(function(){
+				var nameStatic = false;		
+				var userName = $('.userName').text();
+				$('.modify-user-name').click(function(){
+					console.log(nameStatic);
+					if(nameStatic != false ){
+						$('.userName').show();
+						$('.user-name').hide();		
+						$('.modify-user-name2').hide();
+						$('.modify-user-password2').hide();
+						
+						return nameStatic = false
+					}else{					 
+						$('.userName').hide();
+						$('.user-name').show();
+						$('.modify-user-name').hide();
+						$('.modify-user-password').hide();
+						$('.modify-user-name2').show();
+						$('.modify-user-password2').show();
+						
+						$('.modify-user-password2').click(function(){//取消按钮
+							$('.userName').show();
+							$('.user-name').hide().val(userName);
+							$('.modify-user-name').show();
+							$('.modify-user-password').show();
+							$('.modify-user-name2').hide();
+							$('.modify-user-password2').hide();	
+							
+							$('.lg5pass').hide();//修改密码关闭
+							return nameStatic = false
+						});
+						
+						$('.modify-user-name2').click(function(){//确定按钮
+							var inpName = $('input.user-name').val();
+							if(inpName != null&&inpName !=''){
+								$('.userName').show().text(inpName);
+								$('.user-name').hide();
+							}else{
+								
+								$('.userName').show();
+								$('.user-name').hide().val(userName);
+							}
+							$('.modify-user-name2').hide();
+							$('.modify-user-password2').hide();
+							$('.modify-user-name').show();
+							$('.modify-user-password').show();
+							
+							$('.lg5pass').hide();//修改密码关闭
+							return nameStatic = false
+						})
+						
+					}
+				})
+				
+				$('.modify-user-password').click(function(){
+					$('.lg5pass').show();
+					$('.modify-user-name').hide();
+					$('.modify-user-password').hide();
+					$('.modify-user-name2').show();
+					$('.modify-user-password2').show();
+				})
+			})
+		</script>
+		
+
+	</body>
+</html>

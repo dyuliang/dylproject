@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head"></div>
+		<!--导航栏 END-->
+		<!--子页banner-->
+		<div class="subBan projectban">
+			<div class="w1200">
+				<h1>项目合作</h1>
+				<p>我们致力于打造最具投资价值的标杆产品，为投资人提供最佳财务回报。</p>
+			</div>
+			
+		</div>
+		<!--子页bannerEND-->
+		<div class="project1">
+			<div class="w1200 clearfix">
+				<div class="project1-box">
+		            <a href="project.aspx?type=19">
+		                <img src="img/project/pj-img1.jpg" alt="" />
+		                <div class="project1-title">
+		                    <h3>购物中心</h3>
+		                    <h4>项目拓展   招商合作</h4>
+		                    <p>保利商业公司围绕前期投资拓展、前期定位策划、技术设计顾问、工程管理、物业管理、招商筹备、运营管理、营销推广、会员系统等一系列关键环节不断完善其核心业务能力，逐步形成购物中心全产业链运作体系。</p>
+		                </div>
+		            </a>
+		        </div>
+		        <div class="project1-box">
+		            <a href="project.aspx?type=20">
+		                <img src="img/project/pj-img2.jpg" alt="" />
+		                <div class="project1-title">
+		                    <h3>酒店</h3>
+		                    <h4>项目拓展</h4>
+		                    <p>保利商业公司与洲际、万豪、希尔顿、喜达屋等一批国际顶级酒店管理集团开展战略合作。围绕酒店委托管理、前期规划定位、技术设计顾问、管理合同谈判、开业筹备、销售管理中心、运营管理等一系列关键环节不断完善其核心业务能力，逐步形成星级酒店全价值链运作体系。</p>
+		                </div>
+		            </a>
+		        </div>
+		        <div class="project1-box">
+		            <a href="project.aspx?type=21">
+		                <img src="img/project/pj-img4.jpg" alt="" />
+		                <div class="project1-title">
+		                    <h3>公寓</h3>
+		                    <h4>项目拓展</h4>
+		                    <p>保利商业公司围绕自主经营、管理输出、品牌输出等于一体的全链条服务，我们积极寻求建立长期战略的合作伙伴，将公寓市场品质做好、规模做大。</p>
+		                </div>
+		            </a>
+		        </div>
+		        <div class="project1-box last">
+		            <a href="project.aspx?type=21">
+		                <img src="img/project/pj-img3.jpg" alt="" />
+		                <div class="project1-title">
+		                    <h3>社区商业</h3>
+		                    <h4>项目拓展    招商合作</h4>
+		                    <p>保利商业公司围绕项目策划、工程开发、招商、运营等全链条服务，深耕北上广深一线城市，布局全国。</p>
+		                </div>
+		            </a>
+		        </div>
+
+			</div>
+			
+			<div class="project1-btm">
+				
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
+		<script src="js/masonry-docs.min.js"></script>
+		<script>
+			$('.project1-box').hover(function(){
+				var pHei = $(this).find('p').height();
+				$(this).find('.project1-title').css({'height':66 + pHei +'px'})
+			},function(){
+				$(this).find('.project1-title').css({'height':'56px'})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+<div class="w1200 pr">
+				<!--<a href="javascript:;" class="partner-btn"></a>-->
+				<p>
+					保利商业地产投资管理有限公司   版权所有    ICP备05003852号<br>
+					<a href="falv.html"> 法律声明 </a> · <a href="javascript:;"> 联络我们 </a> · <a href="javascript:;" class="partner-btn">友情链接 </a>
+				</p>
+				<a href="javascript:;" class="ft-icon wx-icon"><img src="img/contact/wx2.jpg" alt=""/></a>
+				<a href="javascript:;" class="ft-icon sina-icon"></a>
+				<a href="javascript:;" target="_blank" class="fr reenoo"><img src="img/index/reenoo.png" alt="锐诺互动"/></a>
+				<div class="partner">
+					<div class="fl partner-list">
+						<a href="javascript:;">中国保利集团</a>
+						<a href="javascript:;">保利地产</a>
+						<a href="javascript:;">保利酒店</a>
+					</div>
+					<a class="part-close" href="javascript:;"></a>
+				</div>
+			</div>
+<!--遮罩-->
+<div class="mapMask"></div>
+<!--网站地图-->
+<div class="webMap">
+	
+	<div class="webMap-title">
+		<ul>
+			<li class="curr">EN</li>
+		</ul>
+		<a class="slide-close" href="javascript:;"></a>
+		
+		<h2>网站地图</h2>
+	</div>
+	<dl class="webMap-dl">
+		<dt><a href="">保利商业</a></dt>
+		<dd><a href="about2.html">业务概览</a></dd>
+		<dd><a href="about3.html">品牌精神</a></dd>
+		<dd><a href="about4.html">发展历程</a></dd>
+		<dd><a href="about5.html">奖项成就</a></dd>
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">核心产品</a></dt>
+		<dd><a href="javascript:;">物业发展</a></dd>
+		<dd><a href="javascript:;">品牌系列</a></dd>
+
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">资讯中心</a></dt>
+		<dd><a href="javascript:;">最新活动</a></dd>
+		<dd><a href="javascript:;">公司新闻</a></dd>
+		<dd><a href="javascript:;">媒体报道</a></dd>
+		<dd><a href="javascript:;">视频</a></dd>
+		<dd><a href="javascript:;">画册</a></dd>
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">项目合作</a></dt>
+		<dd><a href="javascript:;">购物中心 </a></dd>
+		<dd><a href="javascript:;">酒店</a></dd>
+		<dd><a href="javascript:;">社区商业中心</a></dd>
+
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">人才发展</a></dt>
+		<dd><a href="javascript:;">企业文化</a></dd>
+		<dd><a href="javascript:;">培训发展</a></dd>
+		<dd><a href="javascript:;">招贤纳士</a></dd>
+
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">企业责任</a></dt>
+		<dd><a href="javascript:;">青少年教育</a></dd>
+		<dd><a href="javascript:;">环境保护</a></dd>
+		<dd><a href="javascript:;">社区关怀</a></dd>
+	</dl>
+	<dl class="webMap-dl">
+		<dt><a href="javascript:;">联络我们</a></dt>
+		<dd><a href="javascript:;">公司总部 </a></dd>
+		<dd><a href="javascript:;">项目分布</a></dd>
+		<dd><a href="javascript:;">市场传讯</a></dd>
+	</dl>
+	<div class="webMap-wx">
+		<!--<img src="img/wx-erwei1.jpg" />
+		<img src="img/wx-erwei2.jpg" />-->
+	</div>
+</div>
+	<!--返回顶部-->
+<div class="scroll-top"></div>			
+<script>
+$(function(){
+	//友情链接出现
+	$('.partner-btn').click(function(){
+		$('.footer').toggleClass('open');					
+	})
+	$('.part-close').click(function(){
+		$('.footer').removeClass('open');
+	})
+	
+	//网站地图
+	$(document).click(function(){
+		$('.footer').removeClass('open-side');		
+	})
+	$('.mapMask').click(function(){
+		$('.mapMask').fadeOut();
+	})
+	$('.search-lang .menu').click(function(){
+		$('.mapMask').fadeIn();
+		$('.footer').addClass('open-side');
+		return false;
+		event.stopPropagation();
+	})
+	$('.slide-close').click(function(){
+		$('.mapMask').fadeOut();
+		$('.footer').removeClass('open-side');
+	})
+	$('.webMap').click(function(){
+		event.stopPropagation();
+	})
+  	$('.webMap-btn').click(function () {
+        $('.mapMask').fadeIn();
+        $('.footer').addClass('open-side');
+        return false;
+    })
+  	
+  	
+  	//返回顶部
+  	scrollTop();
+  	function scrollTop(){	
+	  	var wint = $(window).scrollTop();
+		$(window).on('scroll',function(){
+			wint = $(window).scrollTop();
+			
+			if(wint > 300 ){
+				$('.scroll-top').fadeIn();	
+			}else{
+				$('.scroll-top').fadeOut();
+			};		
+		});	
+		$('.scroll-top').click(function(){
+			$('body,html').animate({ scrollTop: 0 }, 400);
+		});
+	}
+})
+	
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>保利商业</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="head">	
+		</div>	
+		<!--导航栏 END-->
+		<!--业务概览-->
+		<div class="login-main2">
+			<h2>欢迎你！hhh，完善下你的信息</h2>
+			<h3>以后你也可以使用该邮箱和密码来登录保利商业了。</h3>
+			<div class="login-sig-2 clearfix">
+				<div class="lgs-left"><img src="img/talent/lg-img.jpg"/></div>
+				<div class="lgs-right">
+					<p>登录邮箱地址</p>
+					<input type="text" />
+					<p>昵称</p>
+					<input type="text" />
+					<p>密码</p>
+					<input type="password" />
+					<p>确认密码</p>
+					<input type="password" />
+					<input type="submit" class="log-sub" />
+				</div>
+			</div>		
+
+		</div>
+		
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer end-->
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="js/smooth.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script>
+				
+			$('.pdc-label label').click(function(){  //招聘选择
+				$(this).parent('div').toggleClass('on').siblings().removeClass('on');
+			})
+		</script>
+	</body>
+</html>
